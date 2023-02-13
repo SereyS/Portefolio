@@ -1,0 +1,274 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #353434;
+    /*font-size: 1.6rem; */
+    color: #89CFF0;
+    line-height: 1.6;
+    letter-spacing: .08rem;
+    font-weight: 400;
+}
+
+
+nav ul li{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 1.6em;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #89CFF0;
+}
+.nav-link:hover{
+    color: white;
+}
+
+
+
+.nav {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border: 0;
+    background: #333333;
+    z-index: 100;
+    min-height: 10px;
+    box-shadow: 0px 34px 150px 0px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+}
+nav.scroll{
+    background-color: black;
+    position: fixed;
+}
+.nav-right{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.nav-right > * {
+    padding: 25px;
+}
+
+
+
+.header{
+    height: 859px;
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    background: url("Assets/projet.png") no-repeat center;
+    background-size: cover;
+}
+
+section{
+    padding: 100px;
+    justify-content: space-around;
+
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.about-me{
+    text-align: center;
+    justify-content: center;
+    font-size: 1.6em;
+    align-items: center;
+    grid-area: 2 / 5 / 5 / 9;
+    object-fit: fill;
+}
+/* .ginkui {
+    height: 800px;
+    object-fit: cover;
+    margin-left: 200px;
+
+} */
+
+section img{
+    height: 400px;
+    width: 500px;
+    grid-area: 2 / 1 / 5 / 3;
+}
+
+
+
+.y-button {
+    margin-top: 50px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #000;
+    background-color: #89CFF0;
+    border-width: 10px;
+    border-radius: 6px;
+    line-height: 50px;
+    height: 50px;
+    width: 150px;
+    font-weight: 600;
+    text-align: center;
+    transition: all .5s;
+    box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    text-decoration: none;
+    grid-area: 5 / 6 / 6 / 7;
+
+}
+.y-button:hover,
+.y-button:focus {
+    color: #89CFF0;
+    background: #000;
+    transition: all 2s ease-in-out;
+}
+
+
+
+.message .commentaire{
+    background-color: #333333;
+    border-radius: .2em;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    background-color: #333333;
+}
+/*
+.message{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.left{
+    float: left;
+
+} */
+
+.control{
+    justify-content: center;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.Contact{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: white;
+}
+
+.message1 { grid-area: 2 / 1 / 3 / 3;}
+.message2 {   grid-area: 4 / 1 / 5 / 3; }
+.message3 {   grid-area: 2 / 4 / 3 / 6;  }
+.message4 {  grid-area: 4 / 4 / 5 / 6;}
+.commentaire { grid-area: 6 / 1 / 8 / 6; }
+
+
+.eye {
+    grid-area: 2 / 7 / 8 / 9;
+    width: 200px;
+    height: 100%;
+}
+
+.container{
+    width: 90%;
+    margin: 20px auto;
+    height: 300px;
+}
+
+.carousel{
+    width: 100%;
+    height: 600px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+
+    display: flex;
+    height: 500px;
+    width: 500%;
+    flex-shrink: 0;
+    transition: all 0.5s;
+}
+.slider section{
+    flex-basis: 20%;
+    width: 20%;
+    flex-shrink: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.arrow{
+    position: absolute;
+    top: 10px;
+}
+
+.arrow.prev{
+    left: 10px;
+}
+
+.arrow.next{
+    right: 10px;
+}
+aside{
+    padding: 50px;
+    height: 800px;
+}
+
+.radar{
+    width: 720px;
+    height: 100%;
+    justify-content: right;
+    background: white;
+}
+.carrou{
+    object-fit: fill;
+}
+.text{
+    font-size: 1.4em;
+    align-items: center;
+    text-align: center;
+}
+
+footer{
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 1.6em;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    text-align: center;
+
+}
+
+.fa-linkedin {
+    display: flex;
+    align-items: center;
+    color: white;
+    border: 3px solid #eee;
+}
+.truc{
+    align-items: center;
+}
